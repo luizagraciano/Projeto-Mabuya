@@ -1,0 +1,48 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.flex{
+  display: flex;
+}
+
+justify-content-left{
+  justify-content: left;
+}
+
+justify-content-right{
+  justify-content: right;
+}
+
+.navbar {
+  align-items: center;
+  justify-content: space-between;
+  overflow: hidden;
+  width: 100%;
+  padding: 25px 50px 25px 50px;
+  }
+
+.nav-blocks{
+  gap:50px
+}
+
+body{
+  min-height: 100vh;
+  margin: 0;
+  background-color: #ffffff;
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.topnav, a {
+  float: left;
+  color: #000000;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 600;
+}
