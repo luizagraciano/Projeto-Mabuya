@@ -101,3 +101,24 @@ input, select{
 #comentario{
   height: 100px;
 }
+
+.avistamento-container{
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.avistamento-post{
+  width: 500px;
+  padding: 20px;
+  gap: 15px;
+  border-radius: 10px;
+  box-shadow: 0 5px 30px rgba(0, 0, 0, .2);
+}
+
+.local-data{
+  gap: 5px;
+  font-size: 14px;
+  color: #000000a0;
+}

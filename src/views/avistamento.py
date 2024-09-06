@@ -3,7 +3,9 @@ from src.data.db import get_db
 
 bp = Blueprint('avistamento', __name__, url_prefix='/avistamento')
 
+
 @bp.route('/novo', methods=('GET', 'POST'))
+
 #CREATE
 def criar():
     if request.method == 'POST':
@@ -27,7 +29,9 @@ def criar():
 
     return render_template('avistamento/criar.html')
 
+
 @bp.route('/todos')
+
 #LER
 def ler():
         
@@ -35,7 +39,7 @@ def ler():
     db = get_db()
 
     avistamentos = db.execute(
-        'SELECT * FROM avistamento ORDER BY created DESC'
+        'SELECT * FROM avistamento ORDER BY data_avistamento DESC'
     ).fetchall()
     
     return render_template('avistamento/leitura.html', avistamentos=avistamentos)

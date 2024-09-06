@@ -2,5 +2,23 @@
 {% block title %}Avistamentos{% endblock %}
 
 {% block content %}
+    <div class="avistamento-container flex column">
+        <h1>Avistamentos</h1>
+
+        {% for avistamento in avistamentos %}
+            <article class="avistamento-post flex column">
+                <h3> {{avistamento['nome_especie']}} </h3>
+
+                <div class="local-data flex">
+                    <div class="local-avistamento">{{avistamento['local_avistamento']}},</div>
+                    <div>em {{avistamento['data_avistamento'].strftime('%d/%m/%Y')}}</div>
+                    <div>às {{avistamento['data_avistamento'].strftime('%H:%M')}}</div>
+                </div>
+            
+                <div class="avistamento-comentario">{{avistamento['comentario']}}</div>
+            </article>
+        {% endfor %}
+    </div>
+    
 
 {% endblock %}
