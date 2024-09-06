@@ -2,6 +2,20 @@
 {% block title %}Home{% endblock %}
 {% block content %}
 
+<div class="home-banner flex">
+    <div class="home-banner-content flex column">
+        <h1>Título</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In in hendrerit mauris, a convallis nulla. 
+            Vestibulum mattis feugiat iaculis. Aenean commodo pharetra ex, non dignissim velit molestie eu. 
+            Duis iaculis augue quis vulputate commodo. Fusce tincidunt neque quam, sed consectetur justo cursus non. 
+            Pellentesque in est tristique, faucibus turpis et, pretium nunc. Praesent et dolor ac metus molestie scelerisque. 
+            Proin eget nunc in urna sagittis sollicitudin. Morbi molestie vitae purus malesuada elementum.
+        </p>
+        <button formaction=" {{ url_for('avistamento.criar') }} ">Conheça</button>
 
+    </div>
+    <img src="{{url_for('static', filename='images/home_img.jpg')}}" alt="Ilustração de uma paisagem com curso d'água e floresta." style="width: 40%;">
+    
+</div>
 
 {% endblock %}

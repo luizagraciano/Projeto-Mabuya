@@ -1,6 +1,8 @@
 import os
 from flask import Flask, render_template
 
+from .views import avistamento
+
 def create_app(test_config=None):
     # create and configure the app
     app = Flask(__name__, instance_relative_config=True)
@@ -25,8 +27,8 @@ def create_app(test_config=None):
     from .data import db
     db.init_app(app)
 
-    from .views import index, sobre
-    app.register_blueprint(index.bp)
+    from .views import avistamento, sobre
+    app.register_blueprint(avistamento.bp)
     app.register_blueprint(sobre.bp)
 
     @app.route('/')
