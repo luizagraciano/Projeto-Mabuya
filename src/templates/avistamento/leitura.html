@@ -3,11 +3,11 @@
 
 {% block content %}
     <div class="avistamento-container flex column">
-        <h1>Avistamentos</h1>
+        <h2>Avistamentos</h2>
 
         {% for avistamento in avistamentos %}
             <article class="avistamento-post flex column">
-                <h3> {{avistamento['nome_especie']}} </h3>
+                <h4> {{avistamento['nome_especie']}} </h4>
 
                 <div class="local-data flex">
                     <div class="local-avistamento">{{avistamento['local_avistamento']}},</div>

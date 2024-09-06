@@ -119,6 +119,10 @@ input, select{
 
 .local-data{
   gap: 5px;
-  font-size: 14px;
+  font-size: 12px;
   color: #000000a0;
+}
+
+.avistamento-comentario{
+  font-size: 14px;
 }
