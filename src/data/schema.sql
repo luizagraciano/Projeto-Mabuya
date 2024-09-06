@@ -21,6 +21,6 @@ CREATE TABLE avistamento (
     nome_especie VARCHAR(250) NOT NULL,
     local_avistamento TEXT NOT NULL,
     comentario TEXT NOT NULL,
-    data_avistamento TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP
+    data_avistamento TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
     FOREIGN KEY (nome_especie) REFERENCES especime(nome_popular)
 )
