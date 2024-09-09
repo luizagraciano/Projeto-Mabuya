@@ -7,7 +7,15 @@
 
         {% for avistamento in avistamentos %}
             <article class="avistamento-post flex column">
-                <h4> {{avistamento['nome_especie']}} </h4>
+
+                <div class="flex avistamento-header">
+                    <h4> {{avistamento['nome_especie']}} </h4>
+                    <div class="flex editar-excluir">
+                        <a href="{{ url_for('avistamento.editar', id = avistamento['id']) }}">Editar</a>
+                        <a href="{{ url_for('avistamento.deletar', id = avistamento['id']) }}">Excluir</a>
+                    </div>
+                    
+                </div>
 
                 <div class="local-data flex">
                     <div class="local-avistamento">{{avistamento['local_avistamento']}},</div>

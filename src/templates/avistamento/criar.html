@@ -9,7 +9,7 @@
     <form action="" method="POST" class="flex column">
         <div class="flex column">
             <label for="especie">Espécie</label>
-            <select name="especie" id="especie">
+            <select name="especie" id="especie" required>
                 <option value="Espécie 1">Espécie 1</option>
                 <option value="Espécie 2">Espécie 2</option>
                 <option value="Espécie 3">Espécie 3</option>
@@ -20,12 +20,12 @@
     
         <div class="flex column">
             <label for="local">Local do avistamento</label>
-            <input type="text" name="local">
+            <input type="text" name="local" required>
         </div>
 
         <div class="flex column">
             <label for="comentario">Descrição</label>
-            <textarea name="comentario" id="comentario"></textarea>
+            <textarea name="comentario" id="comentario" required></textarea>
         </div>
 
         <div class="flex column">

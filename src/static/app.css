@@ -30,7 +30,17 @@ body{
 }
 
 .nav-blocks{
+  float: left;
+  padding-bottom: 50px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
   gap:100px
+}
+
+a{
+  text-decoration: none;
+  color: #000000;
 }
 
 a:hover{
@@ -64,16 +74,6 @@ input, select{
   width: 250px;
   padding: 5px;
   margin-bottom: 12px;
-}
-
-.topnav, a {
-  float: left;
-  color: #000000;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 20px;
-  font-weight: 600;
 }
 
 .home-banner{
@@ -125,4 +125,13 @@ input, select{
 
 .avistamento-comentario{
   font-size: 14px;
+}
+
+.avistamento-header{
+  justify-content: space-between;
+}
+
+.editar-excluir{
+  gap: 15px;
+  font-size: 12px;
 }

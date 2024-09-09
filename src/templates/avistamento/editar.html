@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+{% block title %}Editar avistamento{% endblock %}
+
+{% block content %}
+
+<div class="form-container flex column">
+    <div>
+        <h2>Edite seu avistamento</h2>
+    </div>
+    <form action="" method="POST" class="flex column">
+        <div class="flex column">
+            <label for="especie">Espécie</label>
+            <select name="especie" id="especie"  required>
+                <option value="Espécie 1" {% if avistamento['nome_especie'] == 'Espécie 1' %} selected {% endif %}>Espécie 1</option>
+                <option value="Espécie 2" {% if avistamento['nome_especie'] == 'Espécie 2' %} selected {% endif %}>Espécie 2</option>
+                <option value="Espécie 3" {% if avistamento['nome_especie'] == 'Espécie 3' %} selected {% endif %}>Espécie 3</option>
+                <option value="Espécie 4" {% if avistamento['nome_especie'] == 'Espécie 4' %} selected {% endif %}>Espécie 4</option>
+                <option value="Espécie 5" {% if avistamento['nome_especie'] == 'Espécie 5' %} selected {% endif %}>Espécie 5</option>
+            </select>
+        </div>
+    
+        <div class="flex column">
+            <label for="local">Local do avistamento</label>
+            <input type="text" name="local" value="{{ avistamento['local_avistamento'] }}" required>
+        </div>
+
+        <div class="flex column">
+            <label for="comentario">Descrição</label>
+            <textarea name="comentario" id="comentario" required>{{ avistamento['comentario'] }}</textarea>
+        </div>
+
+        <div class="flex column">
+            <button type="submit">Enviar</button>
+        </div>
+    </form>
+    
+ </div>
+
+{% endblock %}
