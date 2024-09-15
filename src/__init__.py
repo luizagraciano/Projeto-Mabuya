@@ -1,7 +1,7 @@
 import os
 from flask import Flask, render_template
 
-from .views import avistamento
+from .views import avistamento, teste
 
 def create_app(test_config=None):
     # create and configure the app
@@ -27,7 +27,7 @@ def create_app(test_config=None):
     from .data import db
     db.init_app(app)
 
-    from .views import avistamento, sobre
+    from .views import sobre
     app.register_blueprint(avistamento.bp)
     app.register_blueprint(sobre.bp)
 
