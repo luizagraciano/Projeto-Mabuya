@@ -90,10 +90,17 @@ input, select{
   align-items: center;
 }
 
-.form-container{
-  width: 100%;
-  height: 500px;
+.criar-container{
+  margin: 50px 100px 50px 100px;
   justify-content: center;
+  align-items: center;
+  gap: 150px;
+}
+
+.form-container, .instrucao-container{
+  width: 500px;
+  height: 500px;
+  justify-content: start;
   align-items: center;
   gap: 20px;
 }

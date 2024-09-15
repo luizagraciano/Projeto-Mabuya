@@ -27,9 +27,10 @@ def create_app(test_config=None):
     from .data import db
     db.init_app(app)
 
-    from .views import sobre, avistamento
+    from .views import sobre, avistamento, especies
     app.register_blueprint(avistamento.bp)
     app.register_blueprint(sobre.bp)
+    app.register_blueprint(especies.bp)
 
     @app.route('/')
     def home():
