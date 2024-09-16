@@ -6,8 +6,6 @@ CREATE TABLE especime (
     grupo TEXT NOT NULL,
     nome_popular VARCHAR(250) NOT NULL,
     nome_cientifico VARCHAR(250) NOT NULL,
-    especie VARCHAR(250) NOT NULL,
-    genero VARCHAR(250) NOT NULL,
     familia VARCHAR(250) NOT NULL,
     ordem VARCHAR(250) NOT NULL,
     classe VARCHAR(250) NOT NULL,
