@@ -21,7 +21,7 @@
         </div>
         <div class="nav-blocks flex">
             <a href="{{ url_for('home') }}">Home</a>
-            <a href="{{ url_for('especies.especies') }}">Espécies</a>
+            <a href="{{ url_for('especies.especie', nome = 'mabuya') }}">Espécies</a>
             <a href="{{ url_for('avistamento.ler')}}">Avistamentos</a>
             <a href="{{ url_for('avistamento.criar')}}">Contribua</a>
             <a href="{{ url_for('sobre.sobre') }}">Sobre Nós</a>

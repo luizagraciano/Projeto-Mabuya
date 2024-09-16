@@ -1,7 +1,43 @@
 {% extends 'base.html' %}
 {% block title %}Espécies{% endblock %}
 {% block content %}
-    <div>
-        
+    <div class="especies-container flex column">
+        <form action="" class="especies-container flex">
+            <button formaction="{{url_for('especies.especie', nome = 'mabuya')}}" class="especie-button">Mabuya</button>
+            <button formaction="{{url_for('especies.especie', nome = 'sebito')}}" class="especie-button">Sebito</button>
+            <button formaction="{{url_for('especies.especie', nome = 'cocoruta')}}" class="especie-button">Cocoruta</button>
+            <button formaction="{{url_for('especies.especie', nome = 'gameleira')}}" class="especie-button">Gameleira</button>
+            <button formaction="{{url_for('especies.especie', nome = 'ribaça')}}" class="especie-button">Ribaça</button>
+        </form>
+
+        <div class="especie flex column">
+            <div class="flex" style="gap: 30px;">
+                <div class="especie-foto">
+                    {% if especie['nome_popular'] == 'Mabuya' %}
+                    <img src="{{ url_for('static', filename='images/mabuya.webp') }}" alt="Lagarto mabuia em cima de uma pedra." style="width: 100%;">
+                    {% elif especie['nome_popular'] == 'Sebito' %}
+                    <img src="{{ url_for('static', filename='images/sebito.jpg') }}" alt="Lagarto sebito no tronco de uma árvore." style="width: 100%;">
+                    {% elif especie['nome_popular'] == 'Cocoruta' %}
+                    <img src="{{ url_for('static', filename='images/cocoruta.jpeg') }}" alt="Pássaro cocoruta em um galho com espinhos." style="width: 100%;">
+                    {% elif especie['nome_popular'] == 'Gameleira' %}
+                    <img src="{{ url_for('static', filename='images/gameleira.jpg') }}" alt="Árvore gameleira." style="width: 100%;">
+                    {% elif especie['nome_popular'] == 'Ribaça' %}
+                    <img src="{{ url_for('static', filename='images/ribaça.jpg') }}" alt="Pássaro ribaça em cima de um galho." style="width: 100%;">
+                    {% endif %}
+                </div>
+    
+                <div class="especie-info flex column">
+                    <h3>{{especie['nome_popular']}}</h3><br>
+                    <div>Nome científico: {{especie['nome_cientifico']}}</div>
+                    <div>Família: {{especie['familia']}}</div>
+                    <div>Ordem: {{especie['ordem']}}</div>
+                    <div>Classe: {{especie['classe']}}</div>
+                    <div>Filo: {{especie['filo']}}</div>
+                    <div>Reino: {{especie['reino']}}</div>
+                </div>
+            </div>
+            
+            <div>{{especie['descricao']}}</div>
+        </div>
     </div>
 {% endblock %}

@@ -65,6 +65,10 @@ button{
   font-size: 14px;
 }
 
+.especie-button{
+  width: 100px;
+}
+
 label{
   font-size: 12px;
 }
@@ -117,11 +121,12 @@ input, select{
   height: 100px;
 }
 
-.avistamento-container{
+.avistamento-container, .especies-container{
   width: 100%;
   justify-content: center;
   align-items: center;
   gap: 30px;
+  margin-bottom: 30px;
 }
 
 .avistamento-post{
@@ -153,4 +158,17 @@ input, select{
 
 .sobre-container{
   margin: 20px 100px 50px 100px;
+}
+
+.especie{
+  width: 700px;
+  padding: 30px;
+  margin-bottom: 30px;
+  gap: 15px;
+  border-radius: 10px;
+  box-shadow: 0 5px 30px rgba(0, 0, 0, .2);
+}
+
+.especie-foto, .especie-info{
+  flex: 1;
 }
