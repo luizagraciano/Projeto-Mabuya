@@ -3,7 +3,7 @@
 
 {% block content %}
 
-<div class="form-container flex column">
+<div class="edit-container flex column">
     <div>
         <h2>Edite seu avistamento</h2>
     </div>
@@ -11,11 +11,11 @@
         <div class="flex column">
             <label for="especie">Espécie</label>
             <select name="especie" id="especie"  required>
-                <option value="Espécie 1" {% if avistamento['nome_especie'] == 'Mabuya' %} selected {% endif %}>Mabuya</option>
-                <option value="Espécie 2" {% if avistamento['nome_especie'] == 'Sebito' %} selected {% endif %}>Sebito</option>
-                <option value="Espécie 3" {% if avistamento['nome_especie'] == 'Cocoruta' %} selected {% endif %}>Cocoruta</option>
-                <option value="Espécie 4" {% if avistamento['nome_especie'] == 'Gameleira' %} selected {% endif %}>Gameleira</option>
-                <option value="Espécie 5" {% if avistamento['nome_especie'] == 'Ribaça' %} selected {% endif %}>Ribaça</option>
+                <option value="Mabuya" {% if avistamento['nome_especie'] == 'Mabuya' %} selected {% endif %}>Mabuya</option>
+                <option value="Sebito" {% if avistamento['nome_especie'] == 'Sebito' %} selected {% endif %}>Sebito</option>
+                <option value="Cocoruta" {% if avistamento['nome_especie'] == 'Cocoruta' %} selected {% endif %}>Cocoruta</option>
+                <option value="Gameleira" {% if avistamento['nome_especie'] == 'Gameleira' %} selected {% endif %}>Gameleira</option>
+                <option value="Ribaça" {% if avistamento['nome_especie'] == 'Ribaça' %} selected {% endif %}>Ribaça</option>
             </select>
         </div>
     
