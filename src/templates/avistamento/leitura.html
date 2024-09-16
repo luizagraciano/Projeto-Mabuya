@@ -9,7 +9,9 @@
             <article class="avistamento-post flex column">
 
                 <div class="flex avistamento-header">
-                    <h4> {{avistamento['nome_especie']}} </h4>
+                    <h4>
+                        <a href="{{ url_for('especies.especie', nome = avistamento['nome_especie']) }}">{{avistamento['nome_especie']}}</a>
+                    </h4>
                     <div class="flex editar-excluir">
                         <a href="{{ url_for('avistamento.editar', id = avistamento['id']) }}">Editar</a>
                         <a href="{{ url_for('avistamento.deletar', id = avistamento['id']) }}">Excluir</a>
@@ -20,7 +22,6 @@
                 <div class="local-data flex">
                     <div class="local-avistamento">{{avistamento['local_avistamento']}},</div>
                     <div>em {{avistamento['data_avistamento'].strftime('%d/%m/%Y')}}</div>
-                    <div>às {{avistamento['data_avistamento'].strftime('%H:%M')}}</div>
                 </div>
             
                 <div class="avistamento-comentario">{{avistamento['comentario']}}</div>

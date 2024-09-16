@@ -83,15 +83,17 @@ input, select{
 .home-banner{
   width: 100%;
   padding-right: 100px;
-  justify-content: space-between;
-  gap: 100px;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
 }
 
 .home-banner-content{
+  width: 700px;
   padding-left: 100px;
   gap: 50px;
-  justify-content: center;
-  align-items: center;
+  justify-content: left;
+  align-items: left;
 }
 
 .criar-container{
