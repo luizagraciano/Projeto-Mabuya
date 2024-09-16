@@ -1,6 +1,6 @@
 # Projeto Mabuya
 
-O "Projeto Mabuya" foi desenvolvido para oferecer uma solução simples para que se possa contribuir com o monitoramento das espécies endêmicas de Fernando de Noronha. A aplicação, construída com Python, Flask e SQLite, foi projetada para que os visitantes da Ilha possam cadastrar na plataforma quando avistarem uma espécie e assim formar uma rede de mapeamento e monitoramento coletivo.
+O "Projeto Mabuya" foi desenvolvido para oferecer uma solução simples para que a população possa contribuir com o monitoramento das espécies endêmicas de Fernando de Noronha. A aplicação, construída com Python, Flask e SQLite, foi projetada para que o público da Ilha possa cadastrar na plataforma quando avistar uma espécie e assim formar uma rede de mapeamento e monitoramento coletivo.
 
 
 # Tecnologias utilizadas
