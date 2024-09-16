@@ -29,11 +29,25 @@ def init_db():
         db.executescript(f.read().decode('utf8'))
 
 
+def seed_db():
+    db = get_db()
+
+    with current_app.open_resource('data/sample.sql') as f:
+        db.executescript(f.read().decode('utf8'))
+
+
 @click.command('init-db')
 def init_db_command():
     """Clear the existing data and create new tables."""
     init_db()
-    click.echo('Initialized the database.')
+    click.echo('Banco de dados iniciado.')
+
+
+@click.command('seed-db')
+def seed_db_command():
+    """Add sample data to database."""
+    seed_db()
+    click.echo('Amostra do banco de dados carregada.')
 
 
 def init_app(app):

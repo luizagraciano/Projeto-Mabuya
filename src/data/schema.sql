@@ -11,7 +11,7 @@ CREATE TABLE especime (
     classe VARCHAR(250) NOT NULL,
     filo VARCHAR(250) NOT NULL,
     reino VARCHAR(250) NOT NULL,
-    descricao VARCHAR(500) NOT NULL
+    descricao VARCHAR(1200) NOT NULL
 );
 
 CREATE TABLE avistamento (
