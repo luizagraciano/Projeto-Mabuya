@@ -24,7 +24,7 @@ O "Projeto Mabuya" foi desenvolvido para oferecer uma solução simples para que
 
 2. Instale as dependências através do arquivo **requirements.txt**
    ```bash
-   $ pip install requirements.txt
+   $ pip install -r requirements.txt
    ```
 
 4. Incialize o banco de dados
